@@ -16,7 +16,7 @@ node ('mac'){
     }
     stage('Post-to-dockerhub') {
     
-     docker.withRegistry('https://registry.hub.docker.com', 'training_creds') {
+     docker.withRegistry('https://registry.hub.docker.com', 'docker_jefri') {
             app.push("latest")
         			}
          }
